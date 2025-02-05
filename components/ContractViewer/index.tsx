@@ -83,7 +83,7 @@ const ContractViewerInner = () => {
         return
       }
 
-      return loadDeployment(address, undefined, false, invalidateRoute)
+      return loadDeployment(address, undefined, true, invalidateRoute)
         .then(() => {
           statusCallback({
             status: 'loaded',
@@ -226,8 +226,8 @@ const ContractViewerInner = () => {
       </ResizablePanelGroup>
 
       <sub>
-        Alpha version - <a href="https://twitter.com/smlxldotio">@smlxldotio</a>{' '}
-        for feature requests or bug fixes
+        Alpha version - <a href="https://x.com/dune">@dune</a> for feature
+        requests or bug fixes
       </sub>
     </div>
   )
